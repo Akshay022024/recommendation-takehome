@@ -165,7 +165,7 @@ Submit by **replying to the original assessment email** with:
 - **Brief overview of your approach** (1-2 paragraphs)
 - **Any challenges you faced and how you overcame them**
 - **Time spent on the assignment**
-- (Optional) Attach a screenshot of your token usage (see below)
+
 
 ---
 
@@ -248,7 +248,8 @@ I built a full-stack AI-powered product recommendation engine using FastAPI (Pyt
 
 ## Token Usage Example
 - Example request: 903 prompt tokens, 309 completion tokens (total ~1200 tokens/request).
-- ![Token Usage Screenshot](./Screenshot 2025-06-28 225608.png)
+- (![Token Usage Screenshot](./Screenshot%202025-06-28%20225608.png)
+)
 
 ---
 
