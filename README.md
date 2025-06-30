@@ -248,7 +248,7 @@ I built a full-stack AI-powered product recommendation engine using FastAPI (Pyt
 
 ## Token Usage Example
 - Example request: 903 prompt tokens, 309 completion tokens (total ~1200 tokens/request).
-- ![Token Usage Screenshot](.recommendation-takehome/Screenshot 2025-06-28 225608.png)
+- ![Token Usage Screenshot](./Screenshot 2025-06-28 225608.png)
 
 ---
 
