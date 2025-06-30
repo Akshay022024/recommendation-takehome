@@ -52,7 +52,7 @@ This project is a full-stack AI-powered product recommendation engine built for 
 
 ## Token Usage Example
 - Example request: 903 prompt tokens, 309 completion tokens (total ~1200 tokens/request).
-- ![Token Usage Screenshot](path/to/your/screenshot.png)
+- ![Token Usage Screenshot](Screenshot 2025-06-28 225608.png)
 
 ---
 
