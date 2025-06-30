@@ -76,14 +76,14 @@ This project is a full-stack AI-powered product recommendation engine built for 
    ```bash
    pip install -r requirements.txt
    ```
-4. Copy the example environment file and add your OpenRouter API key:
+4. Create environment file and add your OpenRouter/OpenAI API key:
    ```bash
-   cp .env.example .env
-   # Edit .env and add your API key
+   
+   # add your API key
    ```
 5. Run the backend server:
    ```bash
-   python app.py
+   uvicorn app:app --host 0.0.0.0 --port 5000
    ```
 
 ### Frontend
