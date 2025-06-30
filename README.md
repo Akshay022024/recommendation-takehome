@@ -210,7 +210,12 @@ I built a full-stack AI-powered product recommendation engine using FastAPI (Pyt
 4. Create environment file and add your OpenRouter/OpneAi API key:
    ```bash
   
-   # add your API key
+   # OPENAI_API_KEY=your api key 
+   MODEL_NAME=your model name
+   MAX_TOKENS=1000
+   TEMPERATURE=0.7
+   DATA_PATH=data/products.json
+   OPENAI_BASE_URL=https://openrouter.ai/api/v1
    ```
 5. Run the backend server:
    ```bash
