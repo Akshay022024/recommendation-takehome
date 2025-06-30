@@ -207,14 +207,14 @@ I built a full-stack AI-powered product recommendation engine using FastAPI (Pyt
    ```bash
    pip install -r requirements.txt
    ```
-4. Copy the example environment file and add your OpenRouter API key:
+4. Create environment file and add your OpenRouter/OpneAi API key:
    ```bash
-   cp .env.example .env
-   # Edit .env and add your API key
+  
+   # add your API key
    ```
 5. Run the backend server:
    ```bash
-   uvicorn app:app --reload
+   uvicorn app:app --host 0.0.0.0 --port 5000
    ```
 
 ### Frontend
