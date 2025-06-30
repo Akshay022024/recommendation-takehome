@@ -1,0 +1,195 @@
+/* User Preferences Container */
+.preferences-container {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #e9ecef;
+}
+
+.preferences-container h3 {
+  margin: 0 0 20px 0;
+  color: #333;
+  font-size: 1.3em;
+  font-weight: 600;
+  border-bottom: 2px solid #4A90E2;
+  padding-bottom: 8px;
+}
+
+/* Preference Sections */
+.preference-section {
+  margin-bottom: 25px;
+}
+
+.preference-section h4 {
+  margin: 0 0 12px 0;
+  color: #555;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+/* Price Range Options */
+.price-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.price-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.price-option:hover {
+  background-color: #e9ecef;
+  border-color: #4A90E2;
+}
+
+.price-option input[type="radio"] {
+  margin: 0;
+  accent-color: #4A90E2;
+}
+
+.price-option span {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Category and Brand Options */
+.category-options,
+.brand-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.checkbox-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 8px 12px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+.checkbox-option:hover {
+  background-color: #f0f8ff;
+  border-color: #4A90E2;
+  transform: translateY(-1px);
+}
+
+.checkbox-option input[type="checkbox"] {
+  margin: 0;
+  accent-color: #4A90E2;
+}
+
+.checkbox-option input[type="checkbox"]:checked + span {
+  color: #4A90E2;
+  font-weight: 600;
+}
+
+/* Preferences Summary */
+.preferences-summary {
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  margin-top: 20px;
+}
+
+.preferences-summary h4 {
+  margin: 0 0 12px 0;
+  color: #333;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.preferences-summary ul {
+  margin: 0;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.preferences-summary li {
+  margin-bottom: 6px;
+  color: #555;
+  font-size: 14px;
+}
+
+/* Scrollbar Styling for Options */
+.category-options::-webkit-scrollbar,
+.brand-options::-webkit-scrollbar {
+  width: 6px;
+}
+
+.category-options::-webkit-scrollbar-track,
+.brand-options::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.category-options::-webkit-scrollbar-thumb,
+.brand-options::-webkit-scrollbar-thumb {
+  background: #4A90E2;
+  border-radius: 3px;
+}
+
+.category-options::-webkit-scrollbar-thumb:hover,
+.brand-options::-webkit-scrollbar-thumb:hover {
+  background: #357ABD;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .preferences-container {
+    padding: 16px;
+  }
+  
+  .category-options,
+  .brand-options {
+    flex-direction: column;
+    max-height: 150px;
+  }
+  
+  .checkbox-option {
+    border-radius: 6px;
+    justify-content: flex-start;
+  }
+  
+  .price-options {
+    gap: 8px;
+  }
+  
+  .price-option {
+    padding: 6px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .preferences-container h3 {
+    font-size: 1.1em;
+  }
+  
+  .preference-section h4 {
+    font-size: 0.9em;
+  }
+  
+  .checkbox-option,
+  .price-option span {
+    font-size: 13px;
+  }
+}

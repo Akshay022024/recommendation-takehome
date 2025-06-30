@@ -1,0 +1,269 @@
+/* Browsing History Container */
+.history-container {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #e9ecef;
+}
+
+/* History Header */
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.history-header h3 {
+  margin: 0;
+  color: #333;
+  font-size: 1.3em;
+  font-weight: 600;
+  border-bottom: 2px solid #4A90E2;
+  padding-bottom: 8px;
+}
+
+.clear-history-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.clear-history-btn:hover {
+  background: #c82333;
+  transform: translateY(-1px);
+}
+
+/* History Summary */
+.history-summary {
+  margin-bottom: 16px;
+  padding: 8px 12px;
+  background: white;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+}
+
+.history-count {
+  font-size: 14px;
+  color: #666;
+  font-weight: 500;
+}
+
+/* History Items */
+.history-items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: 300px;
+  overflow-y: auto;
+  padding: 4px;
+}
+
+.history-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: white;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.history-item:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: #4A90E2;
+}
+
+.history-item-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  flex-shrink: 0;
+}
+
+.history-item-icon {
+  font-size: 20px;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1));
+}
+
+.history-item-details {
+  flex: 1;
+  min-width: 0;
+}
+
+.history-item-name {
+  margin: 0 0 4px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.history-item-price {
+  margin: 0 0 4px 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: #4A90E2;
+}
+
+.history-item-category {
+  font-size: 12px;
+  color: #666;
+  background: #f0f0f0;
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+.history-item-badge {
+  background: #4A90E2;
+  color: white;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 4px 6px;
+  border-radius: 10px;
+  min-width: 20px;
+  text-align: center;
+}
+
+/* History Footer */
+.history-footer {
+  margin-top: 16px;
+  padding: 12px;
+  background: #e8f4f8;
+  border-radius: 6px;
+  border: 1px solid #d0e7f0;
+}
+
+.history-note {
+  margin: 0;
+  font-size: 13px;
+  color: #555;
+  text-align: center;
+  font-style: italic;
+}
+
+/* Empty History State */
+.empty-history {
+  text-align: center;
+  padding: 40px 20px;
+  color: #666;
+}
+
+.empty-history-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.empty-history h4 {
+  margin: 0 0 12px 0;
+  color: #333;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.empty-history p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* Scrollbar Styling */
+.history-items::-webkit-scrollbar {
+  width: 6px;
+}
+
+.history-items::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.history-items::-webkit-scrollbar-thumb {
+  background: #4A90E2;
+  border-radius: 3px;
+}
+
+.history-items::-webkit-scrollbar-thumb:hover {
+  background: #357ABD;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .history-container {
+    padding: 16px;
+  }
+  
+  .history-header {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  
+  .history-header h3 {
+    font-size: 1.1em;
+  }
+  
+  .clear-history-btn {
+    align-self: flex-end;
+    padding: 6px 12px;
+  }
+  
+  .history-item {
+    padding: 10px;
+  }
+  
+  .history-item-icon-container {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .history-item-icon {
+    font-size: 16px;
+  }
+  
+  .history-item-name {
+    font-size: 13px;
+  }
+  
+  .history-item-price {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .history-items {
+    max-height: 250px;
+  }
+  
+  .empty-history {
+    padding: 30px 16px;
+  }
+  
+  .empty-history-icon {
+    font-size: 36px;
+  }
+  
+  .empty-history h4 {
+    font-size: 1em;
+  }
+  
+  .empty-history p {
+    font-size: 13px;
+  }
+}
